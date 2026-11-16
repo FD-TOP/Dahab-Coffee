@@ -389,20 +389,11 @@ p { margin: 0; }
 }
 .morocco {
   position: relative;
-  background: #e5eef2;
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid var(--line);
 }
-.morocco svg { display: block; width: 100%; height: auto; }
-.morocco .sea { fill: #e5eef2; }
-.morocco .land { fill: #fbf7f1; stroke: #c4a574; stroke-width: 2.5; stroke-linejoin: round; }
-.morocco .map-word {
-  font-family: "Great Vibes", cursive;
-  font-size: 42px;
-  fill: rgba(169, 120, 56, 0.55);
-}
-html[dir="rtl"] .morocco .map-word { font-family: "Cairo", sans-serif; font-size: 28px; font-weight: 700; }
+.morocco img { display: block; width: 100%; height: auto; }
 .map-pin {
   position: absolute;
   width: 44px;
@@ -420,8 +411,8 @@ html[dir="rtl"] .morocco .map-word { font-family: "Cairo", sans-serif; font-size
   height: 12px;
   margin: 16px auto 0;
   border-radius: 50%;
-  background: var(--ink);
-  box-shadow: 0 0 0 4px #fff;
+  background: #fff;
+  box-shadow: 0 0 0 3px #1b1612, 0 0 0 6px rgba(255, 255, 255, 0.8);
 }
 .map-pin span {
   position: absolute;
@@ -445,7 +436,7 @@ html[dir="rtl"] .morocco .map-word { font-family: "Cairo", sans-serif; font-size
   height: 15px;
   margin-top: 14px;
   background: var(--gold);
-  box-shadow: 0 0 0 5px #fff, 0 0 0 9px rgba(169, 120, 56, 0.28);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px rgba(27, 22, 18, 0.45);
 }
 .map-pin.is-on span { background: var(--ink); color: #fff; }
 .map-pin.is-dim { opacity: 0.28; pointer-events: none; }
