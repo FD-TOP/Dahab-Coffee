@@ -7,6 +7,7 @@ import {
   formatPrice,
   groups,
 } from "../data/menu";
+import { flavorChoices, flavorOf } from "../data/flavors";
 
 const PICKS_KEY = "dahab-picks";
 
@@ -48,6 +49,7 @@ export default function MenuPage() {
   const [categoryId, setCategoryId] = useState("all");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("menu");
+  const [flavorId, setFlavorId] = useState("");
   const [selectedId, setSelectedId] = useState(params.get("item") || "");
   const [picks, setPicks] = useState(loadPicks);
   const [tray, setTray] = useState(false);
@@ -77,14 +79,16 @@ export default function MenuPage() {
         !needle ||
         entry.name.toLowerCase().includes(needle) ||
         entry.note.toLowerCase().includes(needle) ||
-        entry.category.label.toLowerCase().includes(needle);
-      return inGroup && inCategory && inSearch;
+        entry.category.label.toLowerCase().includes(needle) ||
+        flavorOf(entry).label.toLowerCase().includes(needle);
+      const inFlavor = !flavorId || flavorOf(entry).id === flavorId;
+      return inGroup && inCategory && inSearch && inFlavor;
     });
     if (sort === "price-asc") list = [...list].sort((a, b) => a.price - b.price);
     if (sort === "price-desc") list = [...list].sort((a, b) => b.price - a.price);
     if (sort === "name") list = [...list].sort((a, b) => a.name.localeCompare(b.name, "fr"));
     return list;
-  }, [group, categoryId, query, sort]);
+  }, [group, categoryId, query, sort, flavorId]);
 
   const selected = selectedId ? findItem(selectedId) : null;
   const pickCount = picks.reduce((sum, row) => sum + row.qty, 0);
@@ -125,6 +129,7 @@ export default function MenuPage() {
   }
 
   const activeCategory = categories.find((category) => category.id === categoryId);
+  const activeFlavor = flavorChoices.find((flavor) => flavor.id === flavorId) || null;
 
   return (
     <section className="menu-page">
@@ -176,6 +181,21 @@ export default function MenuPage() {
         </label>
       </div>
 
+      <div className="flavor-row" role="listbox" aria-label="Parfums">
+        {flavorChoices.map((flavor) => (
+          <button
+            key={flavor.id}
+            role="option"
+            aria-selected={flavorId === flavor.id}
+            className={flavorId === flavor.id ? "is-on" : ""}
+            onClick={() => setFlavorId((current) => (current === flavor.id ? "" : flavor.id))}
+          >
+            <img src={flavor.image} alt="" />
+            {flavor.label}
+          </button>
+        ))}
+      </div>
+
       <div className="menu-layout">
         <aside className="cat-rail">
           <button
@@ -204,40 +224,68 @@ export default function MenuPage() {
         <div className="menu-board">
           <div className="board-head">
             <div>
-              <h2>{activeCategory ? activeCategory.label : "Toute la carte"}</h2>
+              <h2>
+                {activeFlavor
+                  ? activeFlavor.label
+                  : activeCategory
+                    ? activeCategory.label
+                    : "Toute la carte"}
+              </h2>
               <p>
-                {activeCategory
-                  ? activeCategory.blurb
-                  : "Toutes les familles correspondant à votre filtre."}
+                {activeFlavor
+                  ? "La photo suit le parfum choisi."
+                  : activeCategory
+                    ? activeCategory.blurb
+                    : "Choisissez un parfum pour voir le produit."}
               </p>
             </div>
             <span>{items.length} référence{items.length > 1 ? "s" : ""}</span>
           </div>
+
+          {activeFlavor && !selected ? (
+            <article className="flavor-stage" key={activeFlavor.id}>
+              <img src={activeFlavor.image} alt={activeFlavor.label} />
+              <div>
+                <p className="eyebrow">Parfum</p>
+                <h3>{activeFlavor.label}</h3>
+                <p>{items.length} produit{items.length > 1 ? "s" : ""} avec ce goût.</p>
+              </div>
+            </article>
+          ) : null}
 
           {selected ? (
             <article className="spotlight" key={selected.id}>
               <button className="close" onClick={() => setSelectedId("")} aria-label="Fermer la fiche">
                 ×
               </button>
-              <p className="eyebrow" style={{ color: selected.category.accent }}>
-                {selected.category.label}
-              </p>
-              <h3>{selected.name}</h3>
-              {selected.note ? <p className="note">{selected.note}</p> : <p className="note">Carte Dahab Coffee</p>}
-              <AnimatedPrice value={selected.price} />
-              <div className="spot-actions">
-                <button className="btn btn-dark" onClick={() => addPick(selected.id)}>
-                  Ajouter à ma sélection
-                </button>
-                <button
-                  className="btn btn-ghost"
-                  onClick={() => {
-                    setGroup(selected.category.group);
-                    setCategoryId(selected.category.id);
-                  }}
-                >
-                  Voir la famille
-                </button>
+              <img
+                className="spot-photo"
+                src={flavorOf(selected).image}
+                alt={flavorOf(selected).label}
+                style={{ objectFit: flavorOf(selected).fit || "cover" }}
+              />
+              <div className="spot-copy">
+                <p className="eyebrow" style={{ color: selected.category.accent }}>
+                  {selected.category.label} · {flavorOf(selected).label}
+                </p>
+                <h3>{selected.name}</h3>
+                {selected.note ? <p className="note">{selected.note}</p> : <p className="note">Carte Dahab Coffee</p>}
+                <AnimatedPrice value={selected.price} />
+                <div className="spot-actions">
+                  <button className="btn btn-dark" onClick={() => addPick(selected.id)}>
+                    Ajouter à ma sélection
+                  </button>
+                  <button
+                    className="btn btn-ghost"
+                    onClick={() => {
+                      setGroup(selected.category.group);
+                      setCategoryId(selected.category.id);
+                      setFlavorId("");
+                    }}
+                  >
+                    Voir la famille
+                  </button>
+                </div>
               </div>
             </article>
           ) : null}
@@ -245,21 +293,31 @@ export default function MenuPage() {
           {items.length === 0 ? (
             <p className="empty">Aucun produit pour cette recherche. Essayez un autre mot.</p>
           ) : (
-            <ul className="item-grid" key={`${group}-${categoryId}-${query}-${sort}`}>
-              {items.map((entry, index) => (
-                <li key={entry.id} style={{ "--i": Math.min(index, 18) }}>
-                  <button
-                    className={`item-card ${selectedId === entry.id ? "is-active" : ""}`}
-                    onClick={() => openItem(entry.id)}
-                    style={{ "--accent": entry.category.accent }}
-                  >
-                    <span className="item-cat">{entry.category.label}</span>
-                    <span className="item-name">{entry.name}</span>
-                    {entry.note ? <span className="item-note">{entry.note}</span> : null}
-                    <span className="item-price">{formatPrice(entry.price)}</span>
-                  </button>
-                </li>
-              ))}
+            <ul className="item-grid" key={`${group}-${categoryId}-${query}-${sort}-${flavorId}`}>
+              {items.map((entry, index) => {
+                const flavor = flavorOf(entry);
+                return (
+                  <li key={entry.id} style={{ "--i": Math.min(index, 18) }}>
+                    <button
+                      className={`item-card ${selectedId === entry.id ? "is-active" : ""}`}
+                      onClick={() => openItem(entry.id)}
+                      style={{ "--accent": entry.category.accent }}
+                    >
+                      <span className="item-photo">
+                        <img
+                          src={flavor.image}
+                          alt=""
+                          style={{ objectFit: flavor.fit || "cover" }}
+                        />
+                      </span>
+                      <span className="item-cat">{flavor.label}</span>
+                      <span className="item-name">{entry.name}</span>
+                      {entry.note ? <span className="item-note">{entry.note}</span> : null}
+                      <span className="item-price">{formatPrice(entry.price)}</span>
+                    </button>
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
@@ -288,9 +346,12 @@ export default function MenuPage() {
                 if (!entry) return null;
                 return (
                   <li key={row.id}>
-                    <div>
-                      <strong>{entry.name}</strong>
-                      <span>{formatPrice(entry.price)}</span>
+                    <div className="tray-item">
+                      <img src={flavorOf(entry).image} alt="" />
+                      <div>
+                        <strong>{entry.name}</strong>
+                        <span>{formatPrice(entry.price)}</span>
+                      </div>
                     </div>
                     <div className="qty">
                       <button onClick={() => changeQty(row.id, -1)} aria-label="Retirer un">

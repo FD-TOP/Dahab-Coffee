@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { categories, featuredIds, findItem, formatPrice, itemCount } from "../data/menu";
+import { flavorOf } from "../data/flavors";
 import stores from "../data/stores.json";
 
 const bags = [
@@ -113,7 +114,7 @@ export default function Home() {
         <div className="feature-row">
           {featured.map((entry) => (
             <Link key={entry.id} to={`/menu?item=${entry.id}`} className="feature-card">
-              <span style={{ background: entry.category.accent }} />
+              <img src={flavorOf(entry).image} alt="" />
               <strong>{entry.name}</strong>
               <em>{formatPrice(entry.price)}</em>
             </Link>
