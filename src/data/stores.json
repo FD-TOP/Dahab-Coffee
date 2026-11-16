@@ -1,0 +1,412 @@
+[
+  {
+    "city": "Marrakech",
+    "stores": [
+      {
+        "name": "Dahab Coffee Koutoubia",
+        "map": "https://maps.app.goo.gl/RrzuMhRtw1yQDv5g8"
+      }
+    ]
+  },
+  {
+    "city": "Casablanca",
+    "stores": [
+      {
+        "name": "Dahab Coffee Oulfa",
+        "map": "https://maps.app.goo.gl/bY6p6DryZKvR3uTd6"
+      },
+      {
+        "name": "Dahab Coffee Moulay Thami Oulfa",
+        "map": "https://maps.app.goo.gl/4K3FtQHULvdtwKrw6"
+      },
+      {
+        "name": "Dahab Coffee Gauthier",
+        "map": "https://maps.app.goo.gl/UEwcGy5aqz6W6Kak8"
+      },
+      {
+        "name": "Dahab Coffee Bourgogne",
+        "map": "https://maps.app.goo.gl/mrKKQ4sN4UyUKgwW8"
+      },
+      {
+        "name": "Dahab Coffee Mers Soultan",
+        "map": "https://maps.app.goo.gl/buhZefVkXoGJ53yPA"
+      },
+      {
+        "name": "Dahab Coffee Moad Bnu Jabal",
+        "map": "https://maps.app.goo.gl/3aitCnZ6PT3muPFT9"
+      },
+      {
+        "name": "Dahab Coffee Yakoub Al Mansour",
+        "map": "https://maps.app.goo.gl/fidvF6uEa7H9r6M36"
+      },
+      {
+        "name": "Dahab Coffee Bd.Yafa",
+        "map": "https://maps.app.goo.gl/grs2f5DdwMGTg2xr5"
+      },
+      {
+        "name": "Dahab Coffee 2 Mars",
+        "map": "https://maps.app.goo.gl/SJuEgxaLexXVFUQw9"
+      },
+      {
+        "name": "Dahab Coffee Makdad El Hrizi",
+        "map": "https://maps.app.goo.gl/sZ331soRp2Cxzz5t5"
+      },
+      {
+        "name": "Dahab Coffee Ibnou Nafiss",
+        "map": "https://maps.app.goo.gl/dE1aikkqPrDeX5hU7"
+      },
+      {
+        "name": "Dahab Coffee Derb Sultan",
+        "map": "https://maps.app.goo.gl/2zujSABgidRpsEeL9"
+      },
+      {
+        "name": "Dahab Coffee Bouskoura",
+        "map": "https://maps.app.goo.gl/z9xKbqrD94HTG5QT6"
+      },
+      {
+        "name": "Dahab Coffee Anassi",
+        "map": "https://maps.app.goo.gl/JLhUxbJkukHF3oZZ8"
+      }
+    ]
+  },
+  {
+    "city": "Rabat",
+    "stores": [
+      {
+        "name": "Dahab Coffee Hassan",
+        "map": "https://maps.app.goo.gl/834S3WmB9yU2E7cw7"
+      },
+      {
+        "name": "Dahab Coffee Yacoub Mansour G5",
+        "map": "https://maps.app.goo.gl/RzpEpMfkwHjM61AE8"
+      },
+      {
+        "name": "Dahab Coffee Moulay Idriss I, Témara",
+        "map": "https://maps.app.goo.gl/xrkfeNqSQmsbHaaW6"
+      },
+      {
+        "name": "Dahab Coffee Salé",
+        "map": "https://maps.app.goo.gl/stWihqDiVY6SfCpY6"
+      }
+    ]
+  },
+  {
+    "city": "El Jadida",
+    "stores": [
+      {
+        "name": "Dahab Coffee Rte de Oualidia",
+        "map": "https://maps.app.goo.gl/PEPPssk1VNjtiZeL6"
+      }
+    ]
+  },
+  {
+    "city": "Kénitra",
+    "stores": [
+      {
+        "name": "Dahab Coffee Tariq Ibn Ziad",
+        "map": "https://maps.app.goo.gl/3mb5tghwtQCHtVFH7"
+      }
+    ]
+  },
+  {
+    "city": "Meknès",
+    "stores": [
+      {
+        "name": "Dahab Coffee Omarou Bnou El As",
+        "map": "https://maps.app.goo.gl/NyiixdmrU5AMctXA7"
+      },
+      {
+        "name": "Dahab Coffee Rouamzine",
+        "map": "https://maps.app.goo.gl/aL51tRFdb8NUyMz38"
+      },
+      {
+        "name": "Dahab Coffee Zitoun",
+        "map": "https://maps.app.goo.gl/H5VUR25HwfmALAuz9"
+      },
+      {
+        "name": "Dahab Coffee Manssour",
+        "map": "https://maps.app.goo.gl/Sh3XHG1UacjHirhT6"
+      },
+      {
+        "name": "Dahab Coffee Ouisslan",
+        "map": "https://maps.app.goo.gl/fZEghscaAtysbvb2A?g_st=com.google.maps.preview.copy"
+      }
+    ]
+  },
+  {
+    "city": "Fès",
+    "stores": [
+      {
+        "name": "Dahab Coffee Mohamed El Kaghat",
+        "map": "https://maps.app.goo.gl/xXg3xiTEgb2CYumW9"
+      },
+      {
+        "name": "Dahab Coffee Ain Chkef",
+        "map": "https://maps.app.goo.gl/8RwtnSF4sicPmbAB8"
+      },
+      {
+        "name": "Dahab Coffee Saada",
+        "map": "https://maps.app.goo.gl/aZrsHuB3UScHNSWdA"
+      },
+      {
+        "name": "Dahab Coffee Benssouda",
+        "map": "https://maps.app.goo.gl/YAVurgC4Af2Ec16XA?g_st=com.google.maps.preview.copy"
+      },
+      {
+        "name": "Dahab Coffee Florence",
+        "map": "https://maps.app.goo.gl/V36gX25nePQJHDQm6?g_st=com.google.maps.preview.copy"
+      }
+    ]
+  },
+  {
+    "city": "Tanger",
+    "stores": [
+      {
+        "name": "Dahab Coffee Moulay Youssef",
+        "map": "https://maps.app.goo.gl/Wjj5Tz7TCQh4fkfi7"
+      },
+      {
+        "name": "Dahab Coffee Souk barra",
+        "map": "https://maps.app.goo.gl/N2jDZJtT1Au84hma9"
+      },
+      {
+        "name": "Dahab Coffee Tarik Ibn Ziyad",
+        "map": "https://maps.app.goo.gl/6VDPmr9byKoh19rA6"
+      },
+      {
+        "name": "Dahab Coffee Rte Rabat",
+        "map": "https://maps.app.goo.gl/4XjNw1A1DE36Lxx7A"
+      },
+      {
+        "name": "Dahab Coffee Ahlan",
+        "map": "https://maps.app.goo.gl/QxRpR1ZDzmBhiEB59"
+      },
+      {
+        "name": "Dahab Coffee Av Anfa",
+        "map": "https://maps.app.goo.gl/cb1ZMAobuv694Xtr8"
+      },
+      {
+        "name": "Dahab Coffee Rue Hollande",
+        "map": "https://maps.app.goo.gl/9uGXEEi9ekyWXUT79"
+      },
+      {
+        "name": "Dahab Coffee Mesnana",
+        "map": "https://maps.app.goo.gl/yYdm41aVZ9hbeA6Z7"
+      },
+      {
+        "name": "Dahab Coffee Bendibane",
+        "map": "https://maps.app.goo.gl/ZbTZ6pvck46LazPs8"
+      },
+      {
+        "name": "Dahab Coffee Bir Chifa",
+        "map": "https://maps.app.goo.gl/myumASVnv67uGNVv6"
+      },
+      {
+        "name": "Dahab Coffee Aouama",
+        "map": "https://maps.app.goo.gl/EnFN6uMh3V9rMtmN6"
+      },
+      {
+        "name": "Dahab Coffee El Ouarda",
+        "map": "https://maps.app.goo.gl/bgtuRHG95uZ2yghu7"
+      },
+      {
+        "name": "Dahab Coffee Bni Ouriaghel",
+        "map": "https://maps.app.goo.gl/kgoYxf62Q5ByMZpVA"
+      },
+      {
+        "name": "Dahab Coffee Mall Ibn batouta",
+        "map": "https://maps.app.goo.gl/rzq6dg6AXXXj5pxN8"
+      },
+      {
+        "name": "Dahab Coffee Boukhalef Av moulay rachid",
+        "map": "https://maps.app.goo.gl/5UBr4QmkXBpLo9r57"
+      },
+      {
+        "name": "Dahab Coffee Valfleuri Av moulay rachid",
+        "map": "https://maps.app.goo.gl/cp17rU42gZAtBHwD8"
+      },
+      {
+        "name": "Dahab Coffee Branes Rue Hammadi Ameziane",
+        "map": "https://maps.app.goo.gl/fMwR46PAkJpsT8Tt6"
+      },
+      {
+        "name": "Dahab Coffee Boulvard Rue allal ben abdellah",
+        "map": "https://maps.app.goo.gl/qVgSETjqJdi3zkom9"
+      },
+      {
+        "name": "Dahab Coffee Kaouassim",
+        "map": "https://maps.app.goo.gl/HA6CUyc8NeFc3XSY6"
+      }
+    ]
+  },
+  {
+    "city": "Tetouan",
+    "stores": [
+      {
+        "name": "Dahab Coffee Av Wahda",
+        "map": "https://www.google.com/maps/dir/35.5717931,-5.3755503/@35.5717931,-5.3781252,17z/data=!4m6!1m5!3m4!2zMzXCsDM0JzE4LjUiTiA1wrAyMiczMi4wIlc!8m2!3d35.5717931!4d-5.3755503?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee Taboula",
+        "map": "https://www.google.com/maps/place/35%C2%B034&apos;03.8%22N+5%C2%B024&apos;00.1%22W/@35.5677483,-5.4001282,21z/data=!4m4!3m3!8m2!3d35.5677137!4d-5.4000206?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee Hmama",
+        "map": "https://www.google.com/maps/dir/35.5707869,-5.3867204/@35.5707226,-5.3869462,21z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee SIDI TALHA",
+        "map": "https://www.google.com/maps/dir/35.5677137,-5.4000206/@35.5677483,-5.4001282,21z/data=!4m6!1m5!3m4!2zMzXCsDM0JzAzLjgiTiA1wrAyNCcwMC4xIlc!8m2!3d35.5677137!4d-5.4000206?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee JAMAA MEZOUAK",
+        "map": "https://www.google.com/maps/dir/35.5765426,-5.3964368/35.5760342,-5.3968646/@35.5762254,-5.3973366,19.28z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee DIOR HJAR",
+        "map": "https://www.google.com/maps/dir/35.5754964,-5.3802147/35.5744362,-5.3797283/@35.5744362,-5.3823032,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee KASSABA",
+        "map": "https://www.google.com/maps/dir/35.5760193,-5.3715467/@35.5760193,-5.3741216,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee SEDRAOUIA",
+        "map": "https://www.google.com/maps/dir/35.5830193,-5.3538575/@35.5833314,-5.3543815,19.07z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee FAR",
+        "map": "https://www.google.com/maps/dir//35.5739608,-5.360039/@35.5739608,-5.3626139,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee BARID",
+        "map": "https://www.google.com/maps/dir/35.5731008,-5.3548883/35.5722109,-5.3546934/@35.572221,-5.3547966,21z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee RETAHA",
+        "map": "https://www.google.com/maps/place/Dahab+rettaha/@35.577888,-5.3600798,17z/data=!3m1!4b1!4m6!3m5!1s0xd0b43d5e2721145:0x992d5cb99e29d88!8m2!3d35.5778837!4d-5.3575049!16s%2Fg%2F11rsrr_l1x?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee SOUKNA O TAAMIR",
+        "map": "https://www.google.com/maps/place/35%C2%B034&apos;52.0%22N+5%C2%B020&apos;41.9%22W/@35.5810238,-5.3451888,19.95z/data=!4m4!3m3!8m2!3d35.5810966!4d-5.3449764?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee TRANKAT",
+        "map": "https://www.google.com/maps/dir/35.5722208,-5.3691843/@35.5722208,-5.3717592,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee BOUJARAH",
+        "map": "https://www.google.com/maps/dir/35.5869217,-5.3563395/@35.587076,-5.3564331,20.73z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee WILAYA 1",
+        "map": "https://www.google.com/maps/place/35%C2%B035&apos;33.0%22N+5%C2%B020&apos;22.3%22W/@35.5925064,-5.3421106,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.5925064!4d-5.3395357?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee WILAYA 2",
+        "map": "https://www.google.com/maps/@35.5891151,-5.3440647,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee WILAYA CENTER",
+        "map": "https://www.google.com/maps/place/35%C2%B035&apos;10.1%22N+5%C2%B020&apos;30.3%22W/@35.5862556,-5.3421306,19.12z/data=!4m4!3m3!8m2!3d35.5861397!4d-5.3417368?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee AV CASABLANCA",
+        "map": "https://www.google.com/maps/dir/35.5651033,-5.3564436/@35.5651316,-5.3565289,19.98z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee KOUILMA",
+        "map": "https://www.google.com/maps/dir/35.5648874,-5.3478932/@35.5648874,-5.3504681,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee MAHATTA",
+        "map": "https://www.google.com/maps/@35.5608482,-5.3719931,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee MOQAWAMA",
+        "map": "https://www.google.com/maps/place/35%C2%B034&apos;08.6%22N+5%C2%B022&apos;21.1%22W/@35.5690599,-5.3751027,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.5690556!4d-5.3725278?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "city": "Larache",
+    "stores": [
+      {
+        "name": "Dahab Coffee Av Caire",
+        "map": "https://maps.app.goo.gl/bDyq8b9UUDbRFe3j9?g_st=com.google.maps.preview.copy"
+      },
+      {
+        "name": "Dahab Coffee Av Chaaban",
+        "map": "https://maps.app.goo.gl/2Yrt1U4ZSS4AN9ns5?g_st=com.google.maps.preview.copy"
+      }
+    ]
+  },
+  {
+    "city": "Martil",
+    "stores": [
+      {
+        "name": "Dahab Coffee MIRAMAR",
+        "map": "https://www.google.com/maps/place/35%C2%B037&apos;19.2%22N+5%C2%B016&apos;25.2%22W/@35.621988,-5.2762399,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.621988!4d-5.273665?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee COMESSARIA",
+        "map": "https://www.google.com/maps/place/57+Av.+Prince+H%C3%A9ritier,+Martil+93150/@35.6157292,-5.2733875,17z/data=!4m6!3m5!1s0xd0b44d74b8d92e3:0x42e079270974b200!8m2!3d35.6157023!4d-5.2734379!16s%2Fg%2F11kbm4fhnj?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee CATALAN",
+        "map": "https://www.google.com/maps/place/35%C2%B037&apos;09.9%22N+5%C2%B016&apos;38.3%22W/@35.6194832,-5.2777371,19.67z/data=!4m4!3m3!8m2!3d35.6194038!4d-5.2773113?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee Av HASSAN 2",
+        "map": "https://www.google.com/maps/dir/35.6148751,-5.2795487/@35.6148069,-5.2797721,21z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee CABONEGRO",
+        "map": "https://www.google.com/maps/dir/35.655711,-5.2916228/@35.6557102,-5.2916601,21z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "city": "M'diq - Findeq",
+    "stores": [
+      {
+        "name": "Dahab Coffee M'DIQ 1",
+        "map": "https://www.google.com/maps/place/35%C2%B040&apos;58.7%22N+5%C2%B019&apos;18.3%22W/@35.6829813,-5.3243256,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.682977!4d-5.3217507?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee M'DIQ 2",
+        "map": "https://www.google.com/maps/dir/35.6827265,-5.3268468/@35.6827474,-5.3269683,20.82z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee FNIDEQ 1",
+        "map": "https://www.google.com/maps/dir/35.8415527,-5.3579078/@35.8415867,-5.3580769,21z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee FNIDEQ 2",
+        "map": "https://www.google.com/maps/dir/35.8564541,-5.3550777/@35.8564541,-5.3576526,17z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "city": "Chefchaouen",
+    "stores": [
+      {
+        "name": "Dahab Coffee CHEFCHAOUEN 1",
+        "map": "https://www.google.com/maps/dir/35.1672419,-5.2683905/@35.1674378,-5.2684332,19.68z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      },
+      {
+        "name": "Dahab Coffee CHEFCHAOUN 2",
+        "map": "https://www.google.com/maps/dir/35.1701039,-5.2687224/@35.1700592,-5.268896,21z?hl=fr&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D"
+      }
+    ]
+  },
+  {
+    "city": "Al Hoceima",
+    "stores": [
+      {
+        "name": "Dahab Coffee Av Salam",
+        "map": "https://maps.app.goo.gl/25D4vWtcjPwMRy9TA?g_st=com.google.maps.preview.copy"
+      }
+    ]
+  }
+]
