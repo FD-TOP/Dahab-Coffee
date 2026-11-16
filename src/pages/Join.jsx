@@ -1,16 +1,17 @@
 import { useState } from "react";
+import { useI18n } from "../i18n";
 
 export default function Join() {
+  const { t } = useI18n();
   const [sent, setSent] = useState(false);
 
   return (
     <section className="page">
       <div className="page-intro">
-        <p className="eyebrow">Recrutement</p>
-        <h1>Rejoindre un store</h1>
+        <p className="eyebrow">{t("jobs.kicker")}</p>
+        <h1>{t("jobs.title")}</h1>
         <p>
-          Baristas, équipiers et responsables : Dahab recrute dans son réseau.
-          Le portail officiel reste{" "}
+          {t("jobs.lead")}{" "}
           <a href="https://job.dahabcoffee.ma/" target="_blank" rel="noreferrer">
             job.dahabcoffee.ma
           </a>
@@ -19,12 +20,9 @@ export default function Join() {
       </div>
       {sent ? (
         <div className="thanks">
-          <p className="script">Bien reçu</p>
-          <h2>Votre intérêt est noté ici</h2>
-          <p>
-            Pour déposer un dossier, écrivez à info@cafesdahab.com ou passez par le portail
-            de recrutement Dahab.
-          </p>
+          <p className="script">{t("jobs.ok")}</p>
+          <h2>{t("jobs.okTitle")}</h2>
+          <p>{t("jobs.okText")}</p>
         </div>
       ) : (
         <form
@@ -35,27 +33,27 @@ export default function Join() {
           }}
         >
           <label>
-            Nom
+            {t("jobs.name")}
             <input name="name" required />
           </label>
           <label>
-            Ville
+            {t("jobs.city")}
             <input name="city" required />
           </label>
           <label>
-            Poste visé
-            <input name="role" placeholder="Barista, équipier, responsable…" required />
+            {t("jobs.role")}
+            <input name="role" placeholder={t("jobs.rolePh")} required />
           </label>
           <label>
-            Email
+            {t("fr.email")}
             <input type="email" required />
           </label>
           <label>
-            Quelques mots
+            {t("jobs.words")}
             <textarea rows="4" />
           </label>
           <button className="btn btn-dark" type="submit">
-            Manifester mon intérêt
+            {t("jobs.send")}
           </button>
         </form>
       )}

@@ -1,28 +1,19 @@
-const voices = [
-  {
-    role: "Direction qualité",
-    text: "Nous éprouvons aujourd'hui la volonté de transmettre notre savoir-faire et d'étendre la marque Dahab au Maroc et au-delà. Notre souhait est de fournir à nos franchisés les outils nécessaires pour une gestion efficace et une réussite absolue.",
-  },
-  {
-    role: "Direction administrative et financière",
-    text: "Depuis la création de Dahab, dix années se sont écoulées, au cours desquelles d'innombrables aspects du métier ont été explorés pour répondre à l'évolution du marché des cafés au Maroc et aux idées qui ne cessent de grandir.",
-  },
-  {
-    role: "Direction commerciale",
-    text: "La franchise est un système par lequel le franchiseur met à disposition d'un indépendant sa marque, son enseigne, son savoir-faire, ainsi qu'un accompagnement et un suivi.",
-  },
-];
+import { useI18n } from "../i18n";
 
 export default function About() {
+  const { t } = useI18n();
+  const voices = [
+    { role: t("about.v1r"), text: t("about.v1") },
+    { role: t("about.v2r"), text: t("about.v2") },
+    { role: t("about.v3r"), text: t("about.v3") },
+  ];
+
   return (
     <section className="page">
       <div className="page-intro">
-        <p className="eyebrow">À propos</p>
-        <h1>Au cœur de la maison</h1>
-        <p>
-          Dahab Coffee est une maison marocaine de café : grains, boissons, miel, amlou
-          et un réseau de stores. Le plaisir tient dans la tasse, et dans la constance.
-        </p>
+        <p className="eyebrow">{t("about.kicker")}</p>
+        <h1>{t("about.title")}</h1>
+        <p>{t("about.lead")}</p>
       </div>
       <div className="voices">
         {voices.map((voice) => (
@@ -33,8 +24,8 @@ export default function About() {
         ))}
       </div>
       <div className="about-band">
-        <p className="script">Tout un plaisir !</p>
-        <p>Made in Morocco · 05 39 70 75 75 · info@cafesdahab.com</p>
+        <p className="script">{t("footer.tag")}</p>
+        <p>{t("footer.made")} · 05 39 70 75 75 · info@cafesdahab.com</p>
       </div>
     </section>
   );
